@@ -5,7 +5,7 @@
 
 
 <p align="justify">
- a Numpy vectorized implementation written in Python of some of the fuzzy clustering algorithms which includes the following:
+ a Numpy vectorized implementation written in Python of some of the fuzzy clustering algorithms, it includes the following:
  </p>
  
 <ul>
@@ -38,23 +38,47 @@ in non-fuzzy clustering, data is divided into distinct clusters, where each data
 
 
 <p> before installing the package its highly recommended that you create a virtual environment, there are many tools which are capable of that, such as  conda , venv ...etc. 
-here is an example of doing so using virtualenv: </p>
+ here is an example of doing so using virtualenv: </p>
 
-<p> first you install virtualenv </p>
+<p> First you install virtualenv </p>
 <pre><code>$ pip install virtualenv </code></pre>
 
-<p> and then create a folder where you can create your environment and cd into it  and then execute the following command: </p>
+<p> Then create a folder where you can create your environment and cd into it  and then execute the following command: </p>
 <pre><code>$ virtualenv env </code></pre>
 
-<p> now activate the environment </p>
+<p> Now activate the environment </p>
 <pre><code>$ \env\Scripts\activate.bat </code></pre>
 
-<p> to Install the Package from PyPi, install pip then run the following code: </p>
+<p> To Install the Package from PyPi, install pip then run the following code: </p>
 <pre><code>$ pip install Fuzzy_Clustering </code></pre>
 
 
 <p> OR if you want to also include dependencies which are necessery for running the examples, you must run the following:(Recommended) </p>
 <pre><code>$ pip install Fuzzy_Clustering[examples] </code></pre>
+
+<h2 id="Usage"> :pencil: Usage</h2>
+
+<p> You can clone the repository and check into the examples folder,
+ it provides two examples.</p>
+
+<p> The first example demonstrates how one can use fuzzy clustering to segment the color values within an into several distinct groups,
+in the example below,Fuzzy C-Means was used with a parameterof 10 clusters. </p>
+
+<pre><code>$ python fuzzy_image_segmentation.py </code></pre>
+
+
+<p align="center"> 
+  <img src="res/segmentation.JPG" alt="segmentation results" height="282px" width="550px">
+</p>
+
+<p> The second example demonstrates the results of running the algorithm on a set of random scattered data points,
+the algorithm was run several times with a varying number of clusters parameter.</p>
+
+<pre><code>$ python random_data_clustering.py </code></pre>
+
+<p align="center"> 
+  <img src="res/random_clustering.JPG" alt="random points clustering" height="282px" width="550px">
+</p>
 
 
 
